@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledStatistics = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
   background: #fff;
   max-width: 400px;
   margin: 0 auto 150px;
