@@ -5,10 +5,10 @@ import {
   TransactionHistory,
 } from './components';
 
-import profileData from './user';
-import statsData from './data';
-import friendsData from './friends';
-import transactionsList from './transactions';
+import profileData from './user.json';
+import statsData from './data.json';
+import friendsData from './friends.json';
+import transactionsList from './transactions.json';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Profile {...profileData} />
       <Statistics title="Upload stats" stats={statsData} />
       <FriendsList friends={friendsData} />
-      <TransactionHistory items={transactionsList} />
+      <TransactionHistory transactions={transactionsList} />
     </div>
   );
 }
